@@ -1,0 +1,28 @@
+{
+  "name": "google-maps-infobox-extendable",
+  "version": "0.0.1",
+  "description": "Extendable google maps info box without the dependency of google maps during build",
+  "main": "infobox.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DominikAngerer/google-maps-infobox.git"
+  },
+  "keywords": [
+    "google",
+    "infobox",
+    "google-maps-infobox",
+    "webpack",
+    "browserify",
+    "google-maps",
+    "maps"
+  ],
+  "author": "shreedharshetty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shreedharshetty/google-maps-infobox-extendable/issues"
+  },
+  "homepage": "https://github.com/shreedharshetty/google-maps-infobox-extendable#readme"
+}
