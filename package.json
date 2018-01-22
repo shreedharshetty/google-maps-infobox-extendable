@@ -1,6 +1,6 @@
 {
   "name": "google-maps-infobox-extendable",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Extendable google maps info box without the dependency of google maps during build",
   "main": "infobox.js",
   "scripts": {

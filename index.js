@@ -174,6 +174,9 @@ InfoBox.prototype.createInfoBoxDiv_ = function () {
       this.div_.appendChild(this.content_);
     }
 
+    //setting z-index passed as options to its parent
+    this.getPanes()[this.pane_].style.zIndex = this.zIndex_;
+
     // Add the InfoBox DIV to the DOM
     this.getPanes()[this.pane_].appendChild(this.div_);
 
@@ -184,10 +187,9 @@ InfoBox.prototype.createInfoBoxDiv_ = function () {
       this.fixedWidthSet_ = true;
 
     } else {
-
       if (this.maxWidth_ !== 0 && this.div_.offsetWidth > this.maxWidth_) {
 
-        this.div_.style.width = this.maxWidth_;
+        this.div_.style.width = this.maxWidth_ + "px";
         this.fixedWidthSet_ = true;
 
       } else { // The following code is needed to overcome problems with MSIE
@@ -658,7 +660,6 @@ InfoBox.prototype.setPosition = function (latlng) {
  * @param {number} index
  */
 InfoBox.prototype.setZIndex = function (index) {
-
   this.zIndex_ = index;
 
   if (this.div_) {
@@ -828,4 +829,3 @@ InfoBox.prototype.close = function () {
 
 
 module.exports = { default: InfoBox, InfoBox: InfoBox }; 
-
